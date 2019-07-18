@@ -6,3 +6,19 @@
 h1 {
     color: blue;
 }
+#box {
+    width: 200px;
+    height: 250px;
+    border: 1px solid blue;
+    background-color: azure;
+}
+#drag, #drag2{
+    width: 80px;
+    height: 80px;
+    border: 1px solid blue;
+    background-color: azure;
+}
+.ui-state-highlight {
+    background-color: blueviolet;
+    color: red;
+}
