@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Задание по Drag and drop</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Привет! </h1>
+    <h1 id="hddPrice"></h1>
+    <h1 id="sddPrice"></h1>
+    <h1 id="usbPrice"></h1>
+    <script>
+fetch('https://kodaktor.ru/cart_data.json')
+.then( (result) => result.json())
+.then( ({hdd, sdd, usbdrive}) => {
+    document.getElementById('hddPrice').textContent = hdd;
+    document.getElementById('sddPrice').textContent = sdd;
+    document.getElementById('usbPrice').textContent = usbdrive;
+    console.log(hdd);
+});
+
+    
+    
+    
+    </script>
 </body>
 </html>
