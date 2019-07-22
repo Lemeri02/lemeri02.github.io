@@ -56,7 +56,7 @@ $(function() {
                 move.find("input").val(parseInt(move.find("input").val()) + 1);
             }
             function addPrice(i) {
-            console.log(array[i]*);
+            console.log(array[i]);
             }
             //$(this).addClass("ui-state-highlight").find('> span').html('OK!');
     /*         $(ui.draggable).clone(true).css({

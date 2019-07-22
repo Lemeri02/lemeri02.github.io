@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <title>3 Товара</title>
+  <meta charset='utf-8'>
+  <link href='style.css' type='text/css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700|Roboto:300,400,400i,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page">
+		<section id="cart" class="shopping-cart">
+			<h1>Корзина покупок</h1>
+      <p>Ваш бюджет: <span id="myBudget"></span></p>
+      <input type='number' min='8' name='budget' value="300" id='budget' />
+      <button type="button" id="fixbudget">Зафиксировать бюджет</button>
+			<ul>
+			</ul>
+			<span class="total">0.00</span>
+		</section>
+		<section id="products" class="products">
+			<h1>Список товаров</h1>
+			<ul>
+				<li id="hdd">
+          <p><span>HDD</span></p>
+          <p><span id='hddPrice' class='data-price'></span>&nbsp; руб.</p>
+        </li>
+				<li id="sdd">
+          <p><span>SDD</span></p>
+          <p><span id='sddPrice' class='data-price'></span>&nbsp; руб.</p>
+        </li>
+				<li id="usb">
+          <p><span>USB Drive</span></p>
+          <p><span id='usbPrice' class='data-price'></span>&nbsp; руб.</p>
+        </li>
+			</ul>
+		</section>
+	</div>
+
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

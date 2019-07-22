@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	font-family: Roboto, Arial, sans-serif;
+	color: #325257;
+}
+
+body {
+	margin: 1% 5%;
+	padding: 1%;
+}
+
+ul, li {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+section#cart ul {
+  height: 200px;
+  overflow: auto;
+  background-color: #cccccc;
+}
+
+li {
+  border: 2px solid #325257;
+  display: inline-block;
+  width: 15%;
+  height: 80px;
+}
+
+section.products li p {
+  font-size: 1.5rem;
+}
+
+section.products ul li p {
+  text-align: center;
+}
+
+#cart ul button {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+#cart ul li {
+  font-weight: 14px;
+}
