@@ -66,6 +66,7 @@ addEvent(document, 'readystatechange', function() {
     clone.setAttribute('data-id', id);
     clone.setAttribute('data-quantity', 1);
     clone.removeAttribute('id');
+    console.log(clone);
 
     let fragment = document.createElement('span');
     fragment.setAttribute('class', 'quantity');
@@ -103,7 +104,6 @@ addEvent(document, 'readystatechange', function() {
     } else {
       addCartItem(item, id);
     }
-
     updateCart();
 
     return false;
@@ -158,6 +158,7 @@ function updateCart(){
     cart_item.querySelectorAll("span.sub-total")[0].innerHTML = " = " + sub_total.toFixed(2);
 
     total += sub_total;
+    console.log(   cart_items);
   }
 
   document.querySelectorAll("#cart span.total")[0].innerHTML = total.toFixed(2);

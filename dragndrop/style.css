@@ -12,11 +12,15 @@
 li { list-style: none }
 a { text-decoration: none }
 
+#product > ul > li{
+    position: relative;
+    z-index: 9999;
+}
+
 .container {
     position: relative;
     width: 800px;
     margin: 30px auto;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -36,6 +40,32 @@ a { text-decoration: none }
     transition: transform .1s ease;
  
 }
+
+.cart ul li {
+    display: inline-block;  
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 150px;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    transition: transform .1s ease;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    text-align: center;
+}
+.key{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
 #product ul li:hover {
     background-color: #fff8c1;
 }
@@ -48,30 +78,7 @@ a { text-decoration: none }
 h1 {
     color: blue;
 }
-/* .goods{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    width: 800px;
-    height: 200px;
-    background-color: rgb(221, 221, 221);
-    border: 2px solid gray;
-    border-radius: 10px;
-    
-} */
-/* .goods__items{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
-.item{
-    width: 80px;
-    height: 80px;
-    border: 1px solid  gray;
-    background-color: #EAEAEC;
-} */
+ 
 
 #box{
     display: block;
@@ -82,31 +89,52 @@ h1 {
     border: 2px solid gray;
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
+     
 }
 .cart{
+   /*  display: 
+    align-items: center;
+    justify-content: center; */
     width: 95%;
-    height: 60%;
+    height: 80%;
     border: 1px solid  gray;
     background-color: #EAEAEC;
     margin-bottom: 15px;
+   
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;  
+}
+#tr {
+    position: relative;
+     display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 10px;
+     
 }
 
 .buttons{
     width: 95%;
-    height: 25%;
-    border: 1px solid gray;
-    background-color: #EAEAEC;
+    height: 10%;
+    /* border: 1px solid gray; */
+    /* background-color: #EAEAEC; */
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .button-items{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.total {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    text-align: left;
+     
 }
 
 /* .drop-hover{
