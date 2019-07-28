@@ -88,11 +88,9 @@ $('#clear_cart').on('click', function(){
     clearCart()
     location.reload(true);
 })
- 
 
 function clearCart(){
     $('#tr').remove();
     $('.total p').remove();
     location.reload(true);
 }
- 
