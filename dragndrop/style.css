@@ -64,7 +64,7 @@ img {
 .key{
     font-size: 20px;
     font-weight: bold;
-    color: red;
+   
 }
 #product ul li:hover {
     background-color: #fff8c1;
@@ -96,7 +96,7 @@ h1 {
     align-items: center;
     justify-content: center; */
     width: 95%;
-    height: 80%;
+    height: 70%;
     border: 1px solid  gray;
     background-color: #EAEAEC;
     margin-bottom: 15px;
@@ -123,20 +123,32 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-.button-items{
+/* .button-items{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-}
+    width: 100px;
+
+} */
 
 .total {
     position: relative;
-    top: 60px;
+    top: 20px;
     left: 10px;
     text-align: left;
      
 }
 
+.button-items-text{
+    position: relative;
+    left: 100px;
+}
+
+#cart-name{
+    position: relative;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* .drop-hover{
     background-color: green;
 } */

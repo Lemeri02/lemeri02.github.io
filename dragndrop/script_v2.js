@@ -88,18 +88,11 @@ $('#clear_cart').on('click', function(){
     clearCart()
     location.reload(true);
 })
-/* $('#budget').on('click', function(){
-    $('input').val($('input').val())
-    console
-}) */
+ 
 
 function clearCart(){
     $('#tr').remove();
     $('.total p').remove();
     location.reload(true);
 }
-
-/* $(document).on("click", ".delegate_update_success", function(){
-    location.reload(true);
-}); */
-//console.log(rpoi);
+ 

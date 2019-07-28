@@ -20,7 +20,7 @@
             <ul class="clear"></ul>
         </section>
     </div>
-    <div id="box"><span>Корзина</span>
+    <div id="box"><span id="cart-name">Корзина</span>
         <div class="cart">
             <ul id="tr"></ul>
             <div class="total">
@@ -32,8 +32,10 @@
         <div class="buttons">
             <button id="clear_cart" class="button-items">Clear cart</button>
             <!-- <button class="button-items">Items</button> -->
-            <button id="budget" class="button-items">Budget</button>
-            <input type="text" value="300">
+            <p class="button-items-text"></p>
+            <!-- <button id="budget" class="button-items">Budget</button> -->
+            <label for="budget">Введите ваш бюджет:</label>
+            <input type="text" value="300" class="button-items" name="budget">
         </div>
     </div>
        
