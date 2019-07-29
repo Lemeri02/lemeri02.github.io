@@ -14,6 +14,15 @@ let arr = $.getJSON("https://kodaktor.ru/cart_data.json", function(data){
             drag: function() {}});
     
         $('.cart').droppable({
+            hoverClass: "drop-hover",
+        activate: function() {
+            $('.cart').css({'background-color': '#FFCC99', 'border': 'dashed red 3px'})
+        },
+        deactivate: function() { 
+            $('.cart').css({'background-color': '#EAEAEC', 'border': 'none'})
+        },
+
+
             drop:function(event, ui) {
                 let cart = $(this), 
                 move = ui.draggable,
@@ -78,7 +87,7 @@ function updateCart(summa, quantity){
     $('#quantity').text(`КОЛИЧЕСТВО: ${quantity} шт`);
     let budget = parseInt($('input').val());
     if (summa >= budget) {
-    alert(`Ваша кредитная карта не расчитана на сумму больше ${budget}`);
+    alert(`Ваша кредитная карта не расчитана на сумму больше $${budget}`);
     clearCart()
 }
 }
