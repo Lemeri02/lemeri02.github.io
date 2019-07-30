@@ -71,7 +71,7 @@ function addCart(cart, move) {
         `<li data-id="${id}" id="${id}">
         <img class="image" src="${key}.webp">
         <span class="key"> ${key}</span> <br/>
-        <span>$ </span>
+        <span>Стоимость:  </span>
         <span class="name">${price}</span> <br/>
         <span>Количество: </span>
         <span class="count"> 1 </span> <br/>
