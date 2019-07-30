@@ -1,8 +1,7 @@
 let arr = $.getJSON("https://kodaktor.ru/cart_data.json", function(data){
     for (let key in arr.responseJSON) {
         $('ul.clear').append(`<li data-id="${key}"><img class="image" src="${key}.webp"><h2 class="key">${key}</h2><h3>$${arr.responseJSON[key]}</h3></li>`);  }
-
-    let budget = 0;
+        
     let totalQuantity = [];
     let totalPrice = [];
  
@@ -33,7 +32,6 @@ let arr = $.getJSON("https://kodaktor.ru/cart_data.json", function(data){
                     goodCounter.text(parseInt(goodCounter.text()) + 1);
                     let price = parseInt(itemId.find("span.name").text().replace('$',''));
                     let total = parseInt(goodCounter.text()) * price;
-                   // let quantity = parseInt(goodCounter.text());
                     itemId.find('span.price').text(`Сумма: $${total}`);
                     totalPrice.push(price);
                     totalQuantity.push(1);
@@ -44,7 +42,6 @@ let arr = $.getJSON("https://kodaktor.ru/cart_data.json", function(data){
                                     return sum + val;
                                 }, 0);
                     updateCart(summa, quantity);
-                    console.log(totalQuantity);
                 }
                 else {
                     addCart(cart, move);
@@ -81,8 +78,7 @@ function addCart(cart, move) {
     }
 });
 
-function updateCart(summa, quantity){ 
-    console.log(summa)
+function updateCart(summa, quantity){
     $('#summa').text(`ИТОГО: $${summa}`);
     $('#quantity').text(`КОЛИЧЕСТВО: ${quantity} шт`);
     let budget = parseInt($('input').val());
